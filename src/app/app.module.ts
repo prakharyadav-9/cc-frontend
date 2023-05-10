@@ -62,7 +62,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatDividerModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideMessaging(() => getMessaging())
+    provideMessaging(() => getMessaging()),
+    
     // NgxDropzoneWrapperModule
   ],
   providers: [],

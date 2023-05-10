@@ -8,6 +8,9 @@ import axios from 'axios';
 })
 export class UpFileComponent {
 
+
+	 keyEncrypt: boolean = false;
+     encryptFile: boolean = false;
   files: File[] = [];
   id: string;
   showFile = null

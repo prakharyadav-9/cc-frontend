@@ -14,6 +14,20 @@
 	</div>
 </div>
 <div class="button-container" (click) = "onSubmit()">
+	<label for="keyEncrypt"> keyEncrypt??</label><input
+	id="keyEncrypt"
+  type="checkbox"
+  [(ngModel)]="keyEncrypt"
+  [checked]="keyEncrypt"
+  (change)="keyEncrypt = !keyEncrypt"/>
+  <br>
+  <label for="encryptFile">encryptFile??</label>
+  <input
+  id="encryptFile"
+  type="checkbox"
+  [checked]="encryptFile"
+  [(ngModel)]="encryptFile"
+  (change)="encryptFile = !encryptFile"/>
 	<button mat-flat-button class="mat-primary">SEND</button>
 </div>
 <div class="displayer">

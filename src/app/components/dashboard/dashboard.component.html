@@ -1,3 +1,7 @@
+<div *ngIf="isLoggedIn$ | async">
+  <h1>Welcome, user!</h1>
+  <!-- content for authenticated users -->
+</div>
 <app-nav-bar></app-nav-bar>
 <mat-grid-list cols="2" rowHeight="1:1">
   <mat-grid-tile>
