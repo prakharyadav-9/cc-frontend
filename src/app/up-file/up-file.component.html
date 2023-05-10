@@ -1,0 +1,28 @@
+<div class="custom-dropzone" ngx-dropzone [accept]="'*'" (change)="onSelect($event)" [multiple]="false">
+	<ngx-dropzone-label class="preview-file">
+		Drop File Here....
+	</ngx-dropzone-label>
+	<div  *ngIf="!showFile" class="preview-file">
+		<ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+			<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+		</ngx-dropzone-preview>
+	</div>
+	<div *ngIf="showFile" class="preview-file">
+		<ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview"  *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)" >
+			<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+		</ngx-dropzone-image-preview>
+	</div>
+</div>
+<div class="button-container" (click) = "onSubmit()">
+	<button mat-flat-button class="mat-primary">SEND</button>
+</div>
+<div class="displayer">
+	<div class="divider">
+		<mat-divider></mat-divider>
+   </div>
+
+   <div class="text-display">
+	   Sharable ID - {{id}}
+   </div>
+
+</div>

@@ -1,0 +1,17 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.nav-bar-tab {
+  background-color: #202020;
+}
+
+.nav-bar-icon {
+  color: #ffa31a;
+}
+
+.logo {
+  height: auto;
+  padding-top: 10px;
+  width: auto;
+}

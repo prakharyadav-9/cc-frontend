@@ -1,0 +1,20 @@
+.example-full-width {
+    width: 100%;
+  }
+  
+.outer-div{
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+.input-field {
+  height: 200px;
+  font-size: 50px;
+}

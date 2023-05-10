@@ -1,0 +1,32 @@
+<!-- 
+    <mat-grid-list cols="2" rowHeight="1:1">
+        <mat-grid-tile> -->
+            <div class="outer-div">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Enter Text......</mat-label>
+                    <textarea matInput class="input-field" maxlength="200" [(ngModel)]="textInput"></textarea>
+                    <mat-hint align="end" class="example-hint"> / 200</mat-hint>
+                     </mat-form-field>
+            </div>
+            
+        <!-- </mat-grid-tile>
+        <mat-grid-tile> -->
+            <div class="button-container">
+                <button mat-flat-button color="primary" (click)="onSubmit()">SEND</button>
+            </div>
+
+
+            <div class="displayer">
+                <div class="divider">
+                    <mat-divider></mat-divider>
+               </div>
+   
+               <div class="text-display">
+                   Sharable ID - {{id}}
+               </div>
+   
+            </div>
+            
+        
+        <!-- </mat-grid-tile>
+      </mat-grid-list> -->

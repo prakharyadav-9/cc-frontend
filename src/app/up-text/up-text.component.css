@@ -1,0 +1,40 @@
+.example-full-width {
+    width: 100%;
+  }
+  
+.outer-div{
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+.input-field {
+  height: 200px;
+  font-size: 50px;
+}
+
+.example-hint{
+  color: #fff;
+}
+
+.divider{
+  padding-top: 20px;
+}
+
+.displayer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.text-display{
+  color: #ffa31a;
+  font-family: sans-serif, "Helvetica Neue", sans-serif
+}

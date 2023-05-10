@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "datalake-auths": {
+      "hosting": {
+        "front-end": [
+          "datalake-auths"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "datalake-auths"
+  }
+}

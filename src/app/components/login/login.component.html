@@ -1,0 +1,19 @@
+<h1>login works!</h1>
+<script>console.log("login page is working");</script>
+
+<form>
+    <h2>Login</h2>
+    <label for="emailInput" >Email Address</label>
+    <input matInput type="email" name="email" [(ngModel)] = 'email'>
+
+    <label for="passwordInput" >Password</label>
+    <input matInput type="password" name="password" [(ngModel)] = 'password'>
+    <button type="button" (click)="login()">login</button><br>
+    <a href="/register" >Need Account?<span>Register</span></a>
+    
+    <!-- <div>
+        <a href="/register" target="_blank" >Need Account?<span>Register</span></a>
+        <app-register></app-register>
+    </div>
+    <router-outlet></router-outlet> -->
+</form>

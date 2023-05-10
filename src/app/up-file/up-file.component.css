@@ -1,0 +1,75 @@
+* {
+    font-family: Roboto;
+  }
+  
+  ngx-dropzone,
+  .custom-dropzone {
+    margin: 10px;
+  }
+  
+  .custom-dropzone {
+      max-height: 125px;
+      background: #333;
+      color: rgb(255,163,26);
+      border: 5px dashed rgb(255,163,26);
+      border-radius: 5px;
+      font-size: 20px;
+  }
+  
+  .custom-dropzone.ngx-dz-hovered {
+    border: 5px solid rgb(255,163,26);
+  }
+
+  .preview-file {
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+    
+  }
+
+  :root {
+    --my-primary-color: #ffa31a;
+    --my-accent-color: #ff4436;
+    --my-warn-color: #ff5722;
+  }
+
+  .mat-primary {
+    background-color: var(--my-primary-color);
+    color: #fff;
+  }
+  
+  .mat-button.mat-primary {
+    color: #fff;
+  }
+  
+  .mat-raised-button.mat-primary:not([disabled]):hover {
+    background-color: #ff8c00;
+  }
+  
+  .mat-button.mat-primary:not([disabled]):hover {
+    background-color: #ff8c00;
+  }
+
+  .divider{
+    padding-top: 20px;
+  }
+  
+  .displayer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .text-display{
+    color: #ffa31a;
+    font-family: sans-serif, "Helvetica Neue", sans-serif
+  }
