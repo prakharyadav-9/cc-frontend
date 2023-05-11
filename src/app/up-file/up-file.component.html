@@ -13,21 +13,19 @@
 		</ngx-dropzone-image-preview>
 	</div>
 </div>
-<div class="button-container" (click) = "onSubmit()">
+<div style="background-color: white; text-align: center; margin: 0 auto;">
 	<label for="keyEncrypt"> keyEncrypt??</label><input
 	id="keyEncrypt"
-  type="checkbox"
-  [(ngModel)]="keyEncrypt"
-  [checked]="keyEncrypt"
-  (change)="keyEncrypt = !keyEncrypt"/>
-  <br>
-  <label for="encryptFile">encryptFile??</label>
-  <input
-  id="encryptFile"
-  type="checkbox"
-  [checked]="encryptFile"
-  [(ngModel)]="encryptFile"
-  (change)="encryptFile = !encryptFile"/>
+	type="checkbox"
+	(change)="keyEncrypt = !keyEncrypt"/>
+	<br>
+	<label for="encryptFile">encryptFile??</label>
+	<input
+	id="encryptFile"
+	type="checkbox"
+	(change)="encryptFile = !encryptFile"/>
+</div>
+<div class="button-container" (click) = "onSubmit()">
 	<button mat-flat-button class="mat-primary">SEND</button>
 </div>
 <div class="displayer">

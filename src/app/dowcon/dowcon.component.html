@@ -10,6 +10,18 @@
             
         <!-- </mat-grid-tile>
         <mat-grid-tile> -->
+          <div style="background-color: white; text-align: center; margin: 0 auto;">
+            <label for="keyEncrypt"> keyDecrypt??</label><input
+            id="keyEncrypt"
+            type="checkbox"
+            (change)="keyEncrypt = !keyEncrypt"/>
+            <br>
+            <label for="encryptFile">decryptFile??</label>
+            <input
+            id="encryptFile"
+            type="checkbox"
+            (change)="encryptFile = !encryptFile"/>
+          </div>
             <div class="button-container">
                 <button mat-flat-button color="primary" (click)="sendRequest()">SEND</button>
             </div>
