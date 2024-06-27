@@ -7,6 +7,9 @@ import axios from 'axios';
   styleUrls: ['./up-text.component.css']
 })
 export class UpTextComponent {
+	private hostUrl:string= 'http://localhost:8000/';//'http://10.42.0.173:8000/';
+	keyEncrypt: boolean =false;
+     encryptFile: boolean=false;
   id: string;
   textInput: string;
   onSubmit()
@@ -15,7 +18,11 @@ export class UpTextComponent {
     const formData = new FormData();
     	// formData.append('file', null);
 		formData.append('text',this.textInput) // Send the first file only
-    	axios.post('http://10.42.0.173:8000/datalake/upload', formData)
+		console.log("getting encrypt key::",this.keyEncrypt)
+		console.log("encrytp file:: ",this.encryptFile)
+		formData.append('keyEncrypt',""+(this.keyEncrypt));
+		formData.append('encryptFile' , ""+this.encryptFile);
+    	axios.post(this.hostUrl+'datalake/upload', formData)
 		.then(response => {
 			console.log(response.data);
 			this.id=response.data;

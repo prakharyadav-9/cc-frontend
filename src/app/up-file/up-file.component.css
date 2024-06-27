@@ -6,6 +6,11 @@
   .custom-dropzone {
     margin: 10px;
   }
+
+  .example-full-width {
+    width: 100%;
+  }
+  
   
   .custom-dropzone {
       max-height: 125px;

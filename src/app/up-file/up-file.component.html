@@ -19,11 +19,11 @@
 	type="checkbox"
 	(change)="keyEncrypt = !keyEncrypt"/>
 	<br>
-	<label for="encryptFile">encryptFile??</label>
+	<!-- <label for="encryptFile">encryptFile??</label>
 	<input
 	id="encryptFile"
 	type="checkbox"
-	(change)="encryptFile = !encryptFile"/>
+	(change)="encryptFile = !encryptFile"/> -->
 </div>
 <div class="button-container" (click) = "onSubmit()">
 	<button mat-flat-button class="mat-primary">SEND</button>
@@ -33,8 +33,12 @@
 		<mat-divider></mat-divider>
    </div>
 
-   <div class="text-display">
+   <!-- <div class="text-display">
 	   Sharable ID - {{id}}
-   </div>
+   </div> -->
+   <mat-form-field class="example-full-width">
+	<mat-label>Copy ID </mat-label>
+	<textarea matInput placeholder="Ex. 100 Main St">{{id}}</textarea>
+  </mat-form-field>
 
 </div>

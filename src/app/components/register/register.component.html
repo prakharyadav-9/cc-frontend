@@ -1,13 +1,16 @@
-<p>register works!</p>
-<script>console.log("login page is working");</script>
+<div style="background-color: white; text-align: center; margin: 0 auto;">
 
-<form>
-    <h2>Register</h2>
-    <label for="emailInput" >Email Address</label>
-    <input type="email" name="email" [(ngModel)] = 'email'>
-    <br>
-    <label for="passwordInput" >Password</label>
-    <input type="password" name="password" [(ngModel)] = 'password'>
-    <button type="button" (click)="register()">login</button><br>
-    <a href="/login-get" >Already Registered?<span> Login</span></a>
-</form>
+    <p>register works!</p>
+    <script>console.log("login page is working");</script>
+    
+    <form>
+        <h2>Register</h2>
+        <label for="emailInput" >Email Address</label>
+        <input type="email" name="email" [(ngModel)] = 'email'>
+        <br>
+        <label for="passwordInput" >Password</label>
+        <input type="password" name="password" [(ngModel)] = 'password'>
+        <button type="button" (click)="register()">login</button><br>
+        <a href="/login-get" >Already Registered?<span> Login</span></a>
+    </form>
+</div>

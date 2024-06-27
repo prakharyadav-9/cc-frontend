@@ -11,6 +11,18 @@
             
         <!-- </mat-grid-tile>
         <mat-grid-tile> -->
+            <div style="background-color: white; text-align: center; margin: 0 auto;">
+                <label for="keyEncrypt"> keyEncrypt??</label><input
+                id="keyEncrypt"
+                type="checkbox"
+                (change)="keyEncrypt = !keyEncrypt"/>
+                <br>
+                <!-- <label for="encryptFile">encryptFile??</label>
+                <input
+                id="encryptFile"
+                type="checkbox"
+                (change)="encryptFile = !encryptFile"/> -->
+            </div>
             <div class="button-container">
                 <button mat-flat-button color="primary" (click)="onSubmit()">SEND</button>
             </div>
@@ -21,10 +33,14 @@
                     <mat-divider></mat-divider>
                </div>
    
-               <div class="text-display">
+               <!-- <div class="text-display">
                    Sharable ID - {{id}}
                </div>
-   
+    -->
+    <mat-form-field class="example-full-width">
+        <mat-label>Copy ID </mat-label>
+        <textarea matInput placeholder="Ex. 100 Main St">{{id}}</textarea>
+      </mat-form-field>
             </div>
             
         

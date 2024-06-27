@@ -37,7 +37,7 @@ export class DowconComponent {
           var blobConv = new Blob([response.data], {type: response.headers['content-type']});
         const url = window.URL.createObjectURL(blobConv);
         console.log(response.headers['content-type'])
-        const filename = this.inputText + "." +response.headers['content-type'].split('/')[1];
+        const filename = "file" + "." +response.headers['content-type'].split('/')[1];
         const link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', filename); // Change the default file name here
